@@ -1,0 +1,30 @@
+# LICENSE
+
+Copyright (c) 2025 Alexis M. Adams
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, subject to the following conditions:
+
+1. No authorship or credit may be attributed to any AI system or tool. All
+   authorship, architecture, and design credit shall be attributed to
+   Alexis M. Adams ("Invariant Architect") or to human contributors explicitly
+   designated by Alexis.
+
+2. The Software is provided "as is", without warranty of any kind, express or
+   implied, including but not limited to the warranties of merchantability,
+   fitness for a particular purpose and noninfringement. In no event shall the
+   authors or copyright holders be liable for any claim, damages or other
+   liability, whether in an action of contract, tort or otherwise, arising
+   from, out of or in connection with the Software or the use or other
+   dealings in the Software.
+
+3. Any deployment of the Software in safety-critical, financial, medical, or
+   other high-stakes environments MUST:
+   - Enable formal verification (TLA+)
+   - Enable C=0 signature logging for decision traces
+   - Comply with all applicable laws and regulations
+
+Subject to these conditions, the rights granted herein are as broad as the
+standard MIT License.

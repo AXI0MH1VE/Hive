@@ -1,0 +1,28 @@
+system:
+  name: "Axiom Hive"
+  version: "2.2.0-local-genesis"
+  mode: "hybrid"          # creative | verified | hybrid
+  listen_host: "127.0.0.1"
+  listen_port: 8080
+
+verification:
+  enabled: true
+  tla_spec_path: "core/verify/axiom_hive_core.tla"
+  tla_cfg_path: "core/verify/axiom_hive_core.cfg"
+  timeout_seconds: 5
+
+crypto:
+  c0_log_dir: "logs/c0"
+  fhe_enabled: true
+
+monetization:
+  l402_required_for_verified: true
+  sats_per_verified_call: 1000
+
+orchestrator:
+  enable_omega_swarm: true
+  max_parallel_tasks: 4
+
+logging:
+  log_dir: "logs"
+  level: "INFO"
