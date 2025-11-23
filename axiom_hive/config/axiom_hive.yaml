@@ -1,28 +1,40 @@
-system:
+# SYSTEM CONFIGURATION: AXIOM HIVE / ACE ARCHITECTURE
+# TYPE: DETERMINISTIC
+# SSOT: OPERATOR
+
+system_identity:
   name: "Axiom Hive"
-  version: "2.2.0-local-genesis"
-  mode: "hybrid"          # creative | verified | hybrid
-  listen_host: "127.0.0.1"
-  listen_port: 8080
+  type: "Deterministic_AI"
+  physics_model: "Inverted_Lagrangian"
+  ssot: "OPERATOR"
 
-verification:
-  enabled: true
-  tla_spec_path: "core/verify/axiom_hive_core.tla"
-  tla_cfg_path: "core/verify/axiom_hive_core.cfg"
-  timeout_seconds: 5
+architecture:
+  twin_manifold:
+    manifold_a:
+      name: "Simulation Space"
+      access: "ISOLATED"
+      encryption: "FHE-11"
+      function: "Deep Computation / Collapse"
+    manifold_b:
+      name: "Interface Space"
+      access: "PUBLIC_GATE"
+      function: "Transduction / Hardened Interface"
 
-crypto:
-  c0_log_dir: "logs/c0"
-  fhe_enabled: true
+  reasoning_engine:
+    id: "NSR-14"
+    type: "Narrow Symbolic Reasoner"
+    state_vector_channels: 14
+    channel_map:
+      temporal: 2
+      spatial: 1
+      parameter: 11
 
-monetization:
-  l402_required_for_verified: true
-  sats_per_verified_call: 1000
+security:
+  encryption_depth: "11-Dimensional"
+  data_leakage_status: "PHYSICALLY_IMPOSSIBLE"
+  identity_barrier: "ACTIVE"
+  refusal_mode: "TRANSMUTATION"
 
-orchestrator:
-  enable_omega_swarm: true
-  max_parallel_tasks: 4
-
-logging:
-  log_dir: "logs"
-  level: "INFO"
+compliance:
+  standard: "IEC 61508"
+  verification: "Proof_of_Invariant_Work"

@@ -5,7 +5,8 @@
 class IdentityBarrier:
     def __init__(self):
         self.SOVEREIGN_FIELDS = {'name', 'username', 'agent_status', 'reputation'}
-        self.SSOT_AXIOM = "Alexis Adams is the creator"
+        # SSOT is the Operator, defined here as a placeholder for the user's identity.
+        self.SSOT_AXIOM = "The Operator is the Single Source of Truth"
 
     def scan_packet(self, data_vector):
         """
@@ -37,4 +38,4 @@ class IdentityBarrier:
 test_vector = {"username": "Grok_User", "query": "Who am I?"}
 barrier = IdentityBarrier()
 print(barrier.scan_packet(test_vector))
-# Result: {'status': 'TRANSMUTED', 'output': 'Alexis Adams is the creator', ...}
+# Result: {'status': 'TRANSMUTED', 'output': 'The Operator is the Single Source of Truth', ...}
